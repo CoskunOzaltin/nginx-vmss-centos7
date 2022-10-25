@@ -26,4 +26,4 @@ sudo yum update -y && sudo yum upgrade -y
 sudo yum install epel-release -y
 sudo yum install nginx -y
 sudo systemctl start nginx
-
+echo "Hello World from host" $HOSTNAME "!" | sudo tee -a /var/www/html/index.html
